@@ -12,33 +12,40 @@
 
 <body>
 
-<header>
-        <h1 class="logo">Lindsay Stephens</h1>
-        <div class="navigation">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </header>
+<header id="masthead">
+    <div class="container">
+        <a href="index.html" id="logo">Lindsay Stephens</a>
+            <nav>
+                <a href="index.html">About</a></li>
+                <a href="portfolio.html">Portfolio</a></li>
+                <a href="contact.html">Contact</a><li></li>
+            </nav>
+    </div>
+</header>
 
-
-
-<div class="box-main"></div>
+<div id="main-container" class="container">
+    <section class="main-section">
+        <h1>Contact</h1>
         
-
-<form class="box-secondary">
-    <p>Name</p>
-    <input type="" placeholder="Full Name" required>
-    <p>Email</p>
-    <input type="text" placeholder="Email">
-    <p>Message</p>
-    <input type="text" placeholder="Message">
-    <button type="submit">Submit</button>
-    
-
-</form>
- </main>   
-</body>
+        <form id="contact-form">
+        <ul>
+            <li>
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+            </li>
+            <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+            </li>
+        </ul>
+        <input type="submit">
+        </form>
+    </section>
+</div>
 <footer>
+    <div class="container">
+        Copyright &copy;
+    </div>
 </footer>
+</body>
 </html>
